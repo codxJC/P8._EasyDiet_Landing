@@ -1,10 +1,10 @@
 :root {
     box-sizing: border-box;  /*Applies border box sizing to the root element*/ 
-    font-size: 0.875rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.2;
     text-align: center;
     color: black;
-    font-family: 'Cormorant Garamond', sans-serif;
+    font-family: Raleway, sans-serif;
   }
   
   *,
@@ -15,44 +15,80 @@
   
   body {
     /* display: flex;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
+    flex-direction: column; */
     width: 100vw;
     margin: 0 auto;
   }
 
   header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid black; */
-    align-content: center;
     justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100vw;
+    /* margin: 0 auto; */
+    }
+
+  nav {
+    font-family: 'Bebas-Neue', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    /* background-color: black; */
+    width: 100vw;
   }
 
+  ul {
+    padding: 0; /*to override browser default*/
+  }
 
+  li {
+    display: inline-block;
+    padding: 0 0.5em;
+
+  }
+
+  li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  form {
+    margin: 7.5em 0 1.5em;
+  }
+
+  input {
+    height: 1.8em;
+    border-radius: 0;
+    font-size: 1.05rem;
+  }
+
+  #submit {
+    background-color:  rgb(57, 185, 179);
+    /* color: white; */
+    font-size: 1.05rem;
+  }
 
   h1 {
     font-family: Poppins, sans-serif;
     font-size: 1.2rem;
   }
 
+  h2 {
+    font-family: Taviraj, serif;
+    font-size: 1.5rem;
+    margin: 1em 0 0.5em;
+  }
+
   h3 {
     font-family: Poppins, sans-serif;
+    margin: 0;
   }
-
-
-  li {
-    display: inline-block;
-    padding: 0 2em;
-  }
-
-  /* #header-img {
-    border: 1px solid red;
-  } */
-
-#nav-bar {
-  /* border: 1px solid blue; */
-  width: auto;
-}
 
 .flex-container {
   display: flex;
@@ -60,66 +96,163 @@
   width: auto;
   height: auto;
   justify-content: center;
-  margin: 2em 1em;
+  margin: 0.5em auto 2em;
   gap: 2em;
+  /* border: 2px solid black; */
 }
 
-#how .small-containers {
-  background-color: wheat;
-  width: 20em;
-  height: 15em;
-  padding: 1em 1em;
-  color: black;
+#menus-text-block,
+#team-text-block{
+  padding: 0.5em;
+  background-color: black;
 }
 
 #menus .small-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-color: wheat;
-  width: 20em;
-  padding: 1em 1em;
+  width: 90vw;
+  height: 30em;
+  /* padding: 1em 1em; */
   color: white;
-  
 }
 
-.small-containers {
-  background-color: wheat;
-  width: auto;
+#menus p,
+#team p {
+  /* background-color: black; */
+  margin: 0.5em 0;
+  font-size: 1rem;
+  /* opacity: 0.5; */
+}
+
+#how .small-containers {
+  background-color: rgb(57, 185, 179);
+  width: 90vw;
+  height: 15em;
+  padding: 1em 1em;
+}
+
+#team .small-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90vw;
   height: 30em;
-  padding: 1.1em 1.1em;
-  /* color: white; */
+  color: white;
 }
 
 #videos-container {
   display: flex;
   flex-wrap: wrap;
+  /* margin: 2em auto; */
   
 }
 #video {
-  height: 400px;
-  max-width: 100vw;
-  margin: 0 auto;
+  height: auto;
+  max-width: 90vw;
+  margin: 2em auto;
 }
 
-#chef,
-#dietician,
-#coach {
+.chef,
+.dietician,
+.coach {
  max-width: fit-content;
- height: 80%;
+ height: 85%;
 }
 
 #platinum {
   background-image: url(./img/platinum.jpg);
   background-size: cover;
-  width: 100%;
+  background-position: 50% 50%;
  }
 
  #optimum-health {
   background-image: url(./img/health.jpg);
   background-size: cover;
-  width: 100%;
- }
+  /* background-position: 50% 100%; */
+
+}
 
  #vegeterian {
   background-image: url(./img/vegeterian.jpg);
   background-size: cover;
-  width: 100%;
+  background-position: 50% 20%;
+}
+
+#chef {
+  background-image: url(./img/chef.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
  }
+
+ #dietician {
+  background-image: url(./img/dietician.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+ }
+
+ #coach {
+  background-image: url(./img/coach.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+ }
+
+
+
+ .flaticon {
+  width: 64px;
+ }
+
+ footer {
+  /* position: fixed;
+  bottom: 0;
+  width: 100vw;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  background-color: black;
+  color: white;
+ }
+
+/*******************************************************/
+/********* Tablet Devices - Larger than 480px **********/
+/*******************************************************/
+@media (min-width: 30em) {
+  /* body {
+    max-width: 60vw;
+  } */
+
+  form {
+    margin: 9em 0 1.5em;
+  }
+     }    
+
+/********************************************************/
+/***** Tablet Devices Landscape - Larger than 768px *****/
+/********************************************************/
+@media (min-width: 48em) {       
+
+  .flex-container {
+
+    max-width: 80vw;
+
+  }
+
+  }
+/********************************************************/
+/********** Laptop Devices - Larger than 1024px**********/
+/********************************************************/
+/* @media (min-width: 64em) { 
+
+  } */
+/********************************************************/
+/********** Large screens - Larger than 1600px **********/
+/********************************************************/
+
+/* @media (min-width: 100em) { 
+    form {
+
+  }
+} */
