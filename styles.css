@@ -183,7 +183,7 @@
 #chef {
   background-image: url(./img/chef.jpg);
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 5%;
  }
 
  #dietician {
@@ -195,7 +195,7 @@
  #coach {
   background-image: url(./img/coach.jpg);
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 100%;
  }
 
 
