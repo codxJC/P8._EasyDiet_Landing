@@ -65,9 +65,9 @@ li a {
 }
 
 li a:hover {
-  color: rgb(57, 185, 179);
-  border-right: 0.1em solid black;
-  border-left: 0.1em solid black;
+  color: orangered;
+  border-right: 0.1em solid orangered;
+  border-left: 0.1em solid orangered;
 }
 
 form {
