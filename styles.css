@@ -1,102 +1,105 @@
 :root {
-    box-sizing: border-box;  /*Applies border box sizing to the root element*/ 
-    font-size: 1rem;
-    line-height: 1.2;
-    text-align: center;
-    color: black;
-    font-family: Raleway, sans-serif;
-  }
-  
-  *,
-  ::before,
-  ::after {
-    box-sizing: inherit; /* Tells all other elements and pseudo-elements to inherit their box sizing */
-  } 
-  
-  body {
-    /* display: flex;
+  box-sizing: border-box;
+  /*Applies border box sizing to the root element*/
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: black;
+  font-family: Raleway, sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  /* Tells all other elements and pseudo-elements to inherit their box sizing */
+}
+
+body {
+  /* display: flex;
     flex-wrap: wrap;
     flex-direction: column; */
-    width: 100vw;
-    margin: 0 auto;
-  }
+  width: 100vw;
+  margin: 0 auto;
+}
 
-  header {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    width: 100vw;
-    /* margin: 0 auto; */
-    }
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100vw;
+  /* margin: 0 auto; */
+}
 
-  nav {
-    font-family: 'Bebas-Neue', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    /* background-color: black; */
-    width: 100vw;
-  }
+nav {
+  font-family: 'Bebas-Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  /* background-color: black; */
+  width: 100vw;
+}
 
-  ul {
-    padding: 0; /*to override browser default*/
-  }
+ul {
+  padding: 0;
+  /*to override browser default*/
+}
 
-  li {
-    display: inline-block;
-    padding: 0 0.5em;
-    height: auto;
+li {
+  display: inline-block;
+  padding: 0 0.5em;
+  height: auto;
 
-  }
+}
 
-  li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 0.7em 0.25em;
-  }
+li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0.7em 0.25em;
+}
 
-  li a:hover {
-    color: rgb(57, 185, 179);
-    border-right: 0.1em solid black;
-    border-left: 0.1em solid black;
-  }
-  
-  form {
-    margin: 7.5em 0 1.5em;
-  }
+li a:hover {
+  color: rgb(57, 185, 179);
+  border-right: 0.1em solid black;
+  border-left: 0.1em solid black;
+}
 
-  input {
-    height: 1.8em;
-    border-radius: 0;
-    font-size: 1.05rem;
-  }
+form {
+  margin: 7.5em 0 1.5em;
+}
 
-  #submit {
-    background-color:  rgb(57, 185, 179);
-    /* color: white; */
-    font-size: 1.05rem;
-  }
+input {
+  height: 1.8em;
+  border-radius: 0;
+  font-size: 1.05rem;
+}
 
-  h1 {
-    font-family: Poppins, sans-serif;
-    font-size: 1.2rem;
-  }
+#submit {
+  background-color: rgb(57, 185, 179);
+  /* color: white; */
+  font-size: 1.05rem;
+}
 
-  h2 {
-    font-family: Taviraj, serif;
-    font-size: 1.5rem;
-    margin: 1em 0 0.5em;
-  }
+h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+}
 
-  h3 {
-    font-family: Poppins, sans-serif;
-    margin: 0;
-  }
+h2 {
+  font-family: Taviraj, serif;
+  font-size: 1.5rem;
+  margin: 1em 0 0.5em;
+}
+
+h3 {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+}
 
 .flex-container {
   display: flex;
@@ -110,7 +113,7 @@
 }
 
 #menus-text-block,
-#team-text-block{
+#team-text-block {
   padding: 0.5em;
   background-color: black;
 }
@@ -137,7 +140,7 @@
 #how .small-containers {
   background-color: rgb(57, 185, 179);
   width: 90vw;
-  height: 15em;
+  height: auto;
   padding: 1em 1em;
 }
 
@@ -154,8 +157,9 @@
   display: flex;
   flex-wrap: wrap;
   /* margin: 2em auto; */
-  
+
 }
+
 #video {
   height: auto;
   max-width: 90vw;
@@ -165,24 +169,24 @@
 .chef,
 .dietician,
 .coach {
- max-width: fit-content;
- height: 85%;
+  max-width: fit-content;
+  height: 85%;
 }
 
 #platinum {
   background-image: url(./img/platinum.jpg);
   background-size: cover;
   background-position: 50% 50%;
- }
+}
 
- #optimum-health {
+#optimum-health {
   background-image: url(./img/health.jpg);
   background-size: cover;
   /* background-position: 50% 100%; */
 
 }
 
- #vegeterian {
+#vegeterian {
   background-image: url(./img/vegeterian.jpg);
   background-size: cover;
   background-position: 50% 20%;
@@ -192,27 +196,25 @@
   background-image: url(./img/chef.jpg);
   background-size: cover;
   background-position: 50% 5%;
- }
+}
 
- #dietician {
+#dietician {
   background-image: url(./img/dietician.jpg);
   background-size: cover;
   background-position: 50% 50%;
- }
+}
 
- #coach {
+#coach {
   background-image: url(./img/coach.jpg);
   background-size: cover;
   background-position: 50% 100%;
- }
+}
 
-
-
- .flaticon {
+.flaticon {
   width: 64px;
- }
+}
 
- footer {
+footer {
   /* position: fixed;
   bottom: 0;
   width: 100vw;*/
@@ -222,45 +224,73 @@
   height: 3em;
   background-color: black;
   color: white;
- }
+}
 
 /*******************************************************/
 /********* Tablet Devices - Larger than 480px **********/
 /*******************************************************/
 @media (min-width: 30em) {
-  /* body {
-    max-width: 60vw;
-  } */
+
+  body,
+  header,
+  #video {
+    width: 80vw;
+  }
 
   form {
     margin: 9em 0 1.5em;
   }
-     }    
+
+  #how .small-containers {
+    width: auto;
+  }
+}
 
 /********************************************************/
 /***** Tablet Devices Landscape - Larger than 768px *****/
 /********************************************************/
-@media (min-width: 48em) {       
-
+@media (min-width: 48em) {
   .flex-container {
-
-    max-width: 80vw;
-
+    flex-wrap: nowrap;
+    gap: 2em 1.5em;
   }
 
+  #menus .small-containers,
+  #how .small-containers,
+  #team .small-containers {
+    max-width: 30vw;
   }
+}
+
 /********************************************************/
 /********** Laptop Devices - Larger than 1024px**********/
 /********************************************************/
-/* @media (min-width: 64em) { 
+@media (min-width: 64em) {
+  .flex-container {
+    flex-wrap: nowrap;
+  }
+  
+  #menus .small-containers {
+    width: auto;
+  }
 
-  } */
+  #video {
+    width: 50vw;
+  }
+}
+
 /********************************************************/
 /********** Large screens - Larger than 1600px **********/
 /********************************************************/
 
-/* @media (min-width: 100em) { 
-    form {
+@media (min-width: 100em) {
 
+  body,
+  header {
+    width: 50vw;
   }
-} */
+
+  #video {
+    width: 30vw;
+  }
+}
