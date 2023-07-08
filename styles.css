@@ -82,9 +82,13 @@ input {
 
 #submit {
   background-color: rgb(57, 185, 179);
-  /* color: white; */
+  font-weight: bold;
   font-size: 1.05rem;
   cursor: pointer;
+}
+
+#submit:hover {
+  background-color: orange;
 }
 
 h1 {
@@ -139,6 +143,10 @@ h3 {
   /* opacity: 0.5; */
 }
 
+#how p {
+text-align: justify;
+}
+
 #how .small-containers {
   background-color: rgb(57, 185, 179);
   width: 90vw;
@@ -153,7 +161,7 @@ h3 {
   width: 90vw;
   height: 30em;
   color: white;
-  margin-bottom: 5em;
+  /* margin-bottom: 3em; */
 }
 
 #videos-container {
@@ -217,12 +225,19 @@ h3 {
   width: 64px;
 }
 
+.contact {
+  background-color: rgb(57, 185, 179);
+  margin: 2.5em auto;
+  padding: 0.75em 0;
+  line-height: 1.5;
+}
+
 footer {
   display: flex;
   align-items: center;
   z-index: 999;
   justify-content: center;
-  height: 3em;
+  height: 4em;
   background-color: black;
   color: white;
 }
@@ -284,10 +299,15 @@ footer {
     max-width: 30vw;
   }
 
+  .contact {
+    margin: 2.5em auto 6em;
+  }
+
   footer {
     position: fixed;
     bottom: 0;
   }
+
 }
 
 /********************************************************/
