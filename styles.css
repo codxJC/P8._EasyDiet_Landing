@@ -124,7 +124,7 @@ h3 {
   /* border: 2px solid black; */
 }
 
-#menus-text-block,
+.menus-text-block,
 #team-text-block {
   padding: 0.5em;
   background-color: black;
