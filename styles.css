@@ -38,7 +38,7 @@ header {
 
 nav {
   font-family: 'Bebas-Neue', sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; Redundant - the font is uppercase*/
   font-size: 1.1rem;
   /* background-color: black; */
   width: 100vw;
