@@ -19,6 +19,7 @@ Video by Engin Akyurt: https://www.pexels.com/video/a-cook-using-a-wok-2620043/ 
 ___
 
 ### [Live Preview](https://raw.githack.com/codxJC/P8._EasyDiet_Landing/master/index.html)
-##### Still optimizing the media queries.
 
 :)
+
+CodxJC
